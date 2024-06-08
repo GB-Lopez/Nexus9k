@@ -119,7 +119,7 @@ conf t
  hostname nexusph
  int lo 2
  ip add 2.2.2.2 255.255.255.255
-checkpoint ConfigJP
+checkpoint ConfigPH
 end
 sh ip int br
 
@@ -152,7 +152,7 @@ rollback running-config checkpoint VirginPa
 
 !Balik Japan ulit :)
 conf t
-rollback running-config checkpoint VirginPa
+rollback running-config checkpoint ConfigJapan
 
 
 
